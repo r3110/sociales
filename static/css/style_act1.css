@@ -8,18 +8,20 @@
 /*Index*/
 
 body{
-    background-color: #00382B;
+    background-color: #F5FFFE;
+    color: white;
 }
 header{
-    background-color: #F4F3E8;
+    background-color: #2AA066 ;
     height: 60px;
+    color: white;
 }
 h1{
     padding-top: 10px;
     padding-left: 20px;
 }
 nav{
-    background-color: #F4F3E8;
+    background-color: #2AA066;
 }
 .navegador{
     display: flex;
@@ -27,6 +29,7 @@ nav{
     justify-content: right;
 }
 .botones{
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
@@ -34,13 +37,150 @@ nav{
     align-items: center;
     text-align: center;
     padding-top: 7px;
-    flex-wrap: wrap;
-    color: black;
 }
 .botones:hover{
-    background-color: #7D00DE;
+    background-color: black;
     color: aqua;
 }
 .principal{
     margin: 20px;
+}
+
+/*main*/
+
+/*Primer Punto*/
+#punto1{
+    height: 40px;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+.puntos{
+    background-color: #2AA066;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.puntos:hover{
+    background-color: black;
+}
+.puntos_1{
+    background-color: #2AA066 ;
+}
+.father_punto1{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+}
+.son_punto1{
+    margin: 10px;
+    background-color: #5AE3A0 ;
+    color: white;
+}
+.son_punto1:hover{
+    background-color: black;
+}
+.img_punto1{
+    width: 220px;
+    height: 150px
+}
+.mini_father{
+    display: flex;
+    align-items: center;
+}
+.mini_son{
+    margin: 10px;
+}
+
+.img_spacex{
+    height: 200px;
+}
+.spacex_father{
+    margin: 10px;
+    display: flex;
+    background-color: #5AE3A0;
+    align-items: center;
+}
+.spacex_father:hover{
+    background-color: black;
+}
+.spacex_son{
+    margin: 10px;
+}
+.puntos_solos{
+    margin: 5px;
+}
+
+/*Modo celular*/
+@media (max-width: 800px){
+    body{
+        background-color: #F5FFFE;
+        color: white;
+    }
+    header{
+        background-color: #2AA066 ;
+        height: 120px;
+        color: white;
+    }
+    h1{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    nav{
+        background-color: #2AA066;
+    }
+    .navegador{
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botones{
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        padding-top: 7px;
+    }
+    .botones:hover{
+        background-color: black;
+        color: aqua;
+    }
+    #punto1{
+        height: 110px;
+        padding-top: 7px;
+        padding-left: 10px;
+    }
+    .principal{
+        margin: 10px;
+    }
+    .father_punto1{
+        display: flex;
+        flex-direction: column;
+    }
+    .son_punto1{
+        margin: 5px;
+    }
+    .mini_father{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .mini_son{
+        margin: 10px;
+    }
+    .spacex_father{
+        margin: 10px;
+        display: flex;
+        background-color: #5AE3A0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .spacex_son{
+        margin: 10px;
+    }
 }
