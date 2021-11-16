@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/*Index*/
+
+body{
+    background-color: #cef4ff;
+}
+header{
+    background-color: #ffeb13;
+    height: 60px;
+}
+h1{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+nav{
+    background-color: #ffeb13;
+}
+.navegador{
+    display: flex;
+    height: 30px;
+    justify-content: right;
+}
+.botones{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    padding-top: 7px;
+    flex-wrap: wrap;
+    color: black;
+}
+.botones:hover{
+    background-color: #7D00DE;
+    color: aqua;
+}
+.principal{
+    margin: 20px;
+}
+.puntos{
+    background-color: #ffeb13;
+    margin-top: 20px;
+}
+.father1{
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    'a b c';
+}
+.son1{
+    background-color: #59fd7c;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.img1{
+    width: 300px;
+}
+#img_reloj{
+    width: 200px;
+}
+.img2{
+    width: 70%;
+}
+.father2{
+    display: flex;
+    align-items: center;
+}
+.son2{
+    margin: 20px;
+}
+.img4{
+    width: 400px;
+}
+.father4{
+    display: flex;
+    align-items: center;
+}
+.son4{
+    margin: 20px;
+}
+@media (max-width: 800px){
+    header{
+        height: 120px;
+    }
+    h1{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .navegador{
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botones{
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        width: 200px;
+        align-items: center;
+        text-align: center;
+        padding-top: 7px;
+    }
+    .principal{
+        margin: 7px;
+    }
+    .img_cel{
+        width: 250px;
+    }
+    .father1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .father2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .father4{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+    }
+}
