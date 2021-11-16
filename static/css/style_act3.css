@@ -22,6 +22,7 @@ nav{
     background-color: #ffeb13;
 }
 .navegador{
+    color: black;
     display: flex;
     height: 30px;
     justify-content: right;
