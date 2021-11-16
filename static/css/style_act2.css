@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/*Index*/
+
+body{
+    background-color: #FFB8B8;
+}
+header{
+    background-color: #FB4819;
+    height: 60px;
+}
+h1{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+nav{
+    background-color: #FB4819;
+}
+.navegador{
+    display: flex;
+    height: 30px;
+    justify-content: right;
+}
+.botones{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    padding-top: 7px;
+    flex-wrap: wrap;
+    color: black;
+}
+.botones:hover{
+    background-color: #7D00DE;
+    color: aqua;
+}
+.principal{
+    margin: 20px;
+}
+.img_punto1{
+    width: 200px;
+}
+.puntos{
+    background-color: white;
+    margin-top: 20px;
+}
+.father_punto1{
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    'd e f';
+}
+.son_punto1{
+    background-color: #D35B3B;
+    margin: 10px;
+    
+}
+.son_punto1:hover{
+    background-color: red;
+    color: white;
+}
+.celular{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.raton{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.vacuna{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.tesla{
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.mini1{
+    margin: 10px;
+}
+.img_punto3{
+    width: 350px;
+}
+.father_punto3{
+    display: grid;
+    grid-template-areas: 
+    'a b c';
+}
+.son_punto3{
+    background-color: #D35B3B;
+    margin: 10px;
+}
+.son_punto3:hover{
+    background-color: red;
+    color: white;
+}
+.father_min3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.son_mini3{
+    margin: 10px;
+}
+.father4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.father4:hover{
+    background-color: aqua;
+    color: blue;
+}
+.son4{
+    margin: 10px;
+}
+.img4{
+    width: 300px;
+}
+
+@media (max-width: 800px){
+    header{
+        height: 120px;
+    }
+    h1{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .navegador{
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botones{
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        width: 200px;
+        align-items: center;
+        text-align: center;
+        padding-top: 7px;
+    }
+    .father_punto1{
+        display: flex;
+        flex-direction: column;
+    }
+    .father_punto3{
+        display: flex;
+        flex-direction: column;
+    }
+    .father4{
+        display: flex;
+        flex-direction: column;
+    }
+}
