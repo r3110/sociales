@@ -175,4 +175,7 @@ nav{
         display: flex;
         flex-direction: column;
     }
+    .principal{
+    margin: 7px;
+    }
 }
